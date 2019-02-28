@@ -17,7 +17,7 @@ import javax.persistence.PersistenceContextType;
  *
  * @author Cliente
  */
-@PersistenceContext(name = "PersistentUnitName", type = PersistenceContextType.TRANSACTION)
+
 public class NewMain {
 
     /**
