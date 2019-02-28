@@ -7,7 +7,6 @@ package com.jpa.contextotransacao;
 
 import java.io.Serializable;
 import java.util.Objects;
-import javax.ejb.Stateless;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
@@ -26,6 +25,9 @@ public class Usuario implements Serializable {
     @Column(length = 8, nullable = false)
     private String senha;
     private String telefone;
+
+    public Usuario() {
+    }
 
     public Usuario(String email, String nome, String senha, String telefone) {
         this.email = email;
